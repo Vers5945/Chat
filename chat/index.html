@@ -1,0 +1,34 @@
+<!-- <form&nbsp;action="welcome.jsp">
+<input&nbsp;type="text"&nbsp;name="uname">
+<input&nbsp;type="submit"&nbsp;value="go">
+
+ --><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat</title>
+</head>
+<body>
+	<h2>Private chat</h2>
+	<form action="http://localhost:8080/chat/ChatServlet" method="get" name="bswForm">
+	<!-- <form action="./jsp/choix.html" method="get" name="formToChoice"> -->
+		<p>
+			<label for="playerName">Name : </label>
+			<input type="text" name="playerName" id="name">
+		</p>
+		<p>
+			<label for="position">Would you be the : </label>
+				<input type="radio" name="playerPosition" value="client" class="position" checked>|[Client]|
+				<input type="radio" name="playerPosition" value="server" class="position">|[Server]|
+			<!-- <input type="color" name="position" id="color"> -->
+		</p>
+		<p>
+			<!-- <a href="./jsp/index.jsp"> -->
+				<input type="submit" value="Chat">
+			<!-- </a> -->
+		</p>
+	</form>
+</body>
+</html>
